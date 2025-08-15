@@ -66,5 +66,5 @@ TRAVEL-SITE/
 ## 🚀 How to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/travelly.git
+   git clone https://github.com/A-iftikhar02/travelly.git
 Open the index.html file in your browser.
