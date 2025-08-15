@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Travelly</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Footer spacing to match your screenshot -->
+  <style>
+    .footer-grid{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:8px 40px;
+    }
+    .social-links{ display:flex; gap:16px; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">Travelly</a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+      <ul id="primary-nav" class="nav-links" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="policies.html">Policies</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- About Company -->
+  <section class="section">
+    <div class="container">
+      <h1 class="h1">About Travelly</h1>
+      <p class="lead">
+        Travelly is your go-to platform for curated travel guides, destination tips, and inspirational itineraries. 
+        We aim to help travelers plan stress-free adventures packed with memorable experiences.
+      </p>
+    </div>
+  </section>
+
+  <!-- Author Bio -->
+  <section class="section" aria-labelledby="author">
+    <div class="container">
+      <h2 id="author" class="h2">About the Author</h2>
+      <div class="card author-card">
+        <img src="assets/user-1.jpg" alt="Photo of Abdullah Iftikhar">
+        <div>
+          <p><strong>Abdullah Iftikhar</strong> is a passionate traveler and storyteller who has explored over 30 countries. 
+             With an eye for detail and a love for discovering hidden gems, they created Travelly to share practical 
+             advice, cultural insights, and stunning destinations with fellow explorers.</p>
+          <p>When not traveling, Abdullah Iftikhar enjoys photography, hiking, and trying new cuisines. 
+             Through Travelly, they hope to inspire others to embark on unforgettable journeys around the globe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2">Mission & Vision</h2>
+      <p>
+        Our mission is to make travel planning simple, enjoyable, and inspiring for everyone. 
+        Our vision is a connected world where people explore, respect, and appreciate different cultures.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        © 2025 Travelly · Contact:
+        <a href="mailto:contact@travelly.com">contact@travelly.com</a> ·
+        <a href="tel:+923007654321">+92 300 7654321</a>
+      </div>
+
+ <!-- Social icons (open in new tab) -->
+<div class="social-links" aria-label="Social links">
+  <a href="https://instagram.com/travelly_official" class="link" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+  
+  <a href="https://www.facebook.com/facebookapp" target="_blank" rel="noopener" aria-label="Facebook">
+  <i class="fab fa-facebook"></i> Facebook
+</a>
+
+  <a href="https://www.youtube.com/@travellyofficial" class="link" target="_blank" rel="noopener" aria-label="YouTube">
+    <i class="fab fa-youtube"></i> YouTube
+  </a>
+</div>
+
+
+
+    </div>
+  </footer>
+
+  <!-- Scroll to Top button (single instance, inside body) -->
+  <button class="to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

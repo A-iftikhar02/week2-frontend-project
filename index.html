@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travelly — Explore the World</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* Avatar Resizing for testimonials */
+    .testi .oval { width: 140px; height: 140px; margin: 0 auto 1rem; }
+    .testi .oval img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+
+    /* Footer link style + layout to match other pages */
+    .site-footer a { color: #1e90ff; text-decoration: none; }
+    .site-footer a:hover { text-decoration: underline; }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px 40px;
+    }
+    .social-links { display: flex; gap: 16px; }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">Travelly</a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+      <ul id="primary-nav" class="nav-links" data-nav-links>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="policies.html">Policies</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Intro" style="
+    background:
+      linear-gradient(to bottom, rgba(255,255,255,0.65), rgba(255,255,255,0.75)),
+      url('assets/hero.jpg') center/cover no-repeat;">
+    <div class="container">
+      <h1 class="h1">Plan your next adventure</h1>
+      <p class="lead">Discover inspiring places, compare ideas, and get trip-ready with confidence.</p>
+      <div class="cta">
+        <a class="btn" href="#featured">Explore Destinations</a>
+        <a class="link" href="about.html">Learn about us →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section id="featured" class="section" aria-labelledby="featured-heading">
+    <div class="container">
+      <h2 id="featured-heading" class="h2">Featured Destinations</h2>
+      <p class="lead">Hand-picked places loved by travelers from around the world.</p>
+
+      <div class="grid grid-3 dest-grid">
+        <article class="card">
+          <img src="assets/dest-paris.jpg" alt="Eiffel Tower view at sunset in Paris" loading="lazy">
+          <div class="p">
+            <strong>Paris, France</strong>
+            <p class="meta">Iconic landmarks, cafés, art museums.</p>
+            <p>Stroll through Montmartre, visit the Louvre, and cruise the Seine by night.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/dest-bali.jpg" alt="Green rice terraces and palm trees in Bali" loading="lazy">
+          <div class="p">
+            <strong>Bali, Indonesia</strong>
+            <p class="meta">Beaches, temples, wellness retreats.</p>
+            <p>Unwind in Ubud, chase waterfalls, and catch a golden-hour surf.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/dest-santorini.jpg" alt="Whitewashed cliffside homes with blue domes in Santorini" loading="lazy">
+          <div class="p">
+            <strong>Santorini, Greece</strong>
+            <p class="meta">Caldera views, sunsets, Cycladic charm.</p>
+            <p>Wander Oia’s lanes and watch the sun melt into the Aegean.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials" aria-labelledby="testimonials">
+    <div class="container">
+      <h2 id="testimonials" class="h2">What travelers say</h2>
+
+      <div class="grid grid-3">
+        <article class="card testi" aria-label="Review by Jane">
+          <div class="p">
+            <div class="oval">
+              <img src="assets/user-2.jpg" alt="Portrait of Jane" loading="lazy">
+            </div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="quote">“The Santorini guide helped us plan the perfect 4-day escape.”</p>
+            <p class="meta">Jane D. · Solo traveler</p>
+          </div>
+        </article>
+
+        <article class="card testi" aria-label="Review by Omar">
+          <div class="p">
+            <div class="oval">
+              <img src="assets/user-3.jpg" alt="Portrait of Omar" loading="lazy">
+            </div>
+            <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+            <p class="quote">“Loved the Paris food tips — found amazing boulangeries!”</p>
+            <p class="meta">Omar K. · Foodie</p>
+          </div>
+        </article>
+
+        <article class="card testi" aria-label="Review by Priya">
+          <div class="p">
+            <div class="oval">
+              <img src="assets/user-4.jpg" alt="Portrait of Priya" loading="lazy">
+            </div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="quote">“Clear itineraries and stunning spots for photos in Bali.”</p>
+            <p class="meta">Sana S. · Photographer</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-grid">
+      <div>
+        © 2025 Travelly · Contact:
+        <a href="mailto:contact@travelly.com">contact@travelly.com</a> ·
+        <a href="tel:+923007654321">+92 300 7654321</a>
+      </div>
+     <!-- Social icons (open in new tab) -->
+<div class="social-links" aria-label="Social links">
+  <a href="https://instagram.com/travelly_official" class="link" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+  <a href="https://www.facebook.com/facebookapp" target="_blank" rel="noopener" aria-label="Facebook">
+  <i class="fab fa-facebook"></i> Facebook
+</a>
+  <a href="https://www.youtube.com/@travellyofficial" class="link" target="_blank" rel="noopener" aria-label="YouTube">
+    <i class="fab fa-youtube"></i> YouTube
+  </a>
+</div>
+
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

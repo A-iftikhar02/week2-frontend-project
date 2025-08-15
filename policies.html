@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Policies — Travelly</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+  .policies { max-width: 820px; margin: 0 auto; padding: 48px 16px; }
+  .policies h1 { font-weight: 800; font-size: clamp(2rem, 4vw, 2.75rem); margin: 0 0 8px; }
+  .updated { color: var(--muted); font-size: .95rem; margin-bottom: 20px; }
+
+  /* Toggle-all button */
+  .toggle-all {
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    background: var(--primary-200);
+    color: #0b1322;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  /* Accordion */
+  details.policy {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: #fff;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  details.policy[open] { box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px 18px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  summary::-webkit-details-marker { display: none; }
+
+  .chev {
+    width: 22px; height: 22px; border-radius: 50%;
+    border: 1px solid var(--border);
+    display: grid; place-items: center;
+    transition: transform .2s ease;
+    background: var(--primary-100);
+  }
+  details[open] .chev { transform: rotate(180deg); }
+
+  .panel { padding: 0 18px 16px 18px; color: var(--muted); }
+  .panel p { margin: 10px 0; line-height: 1.7; }
+  .panel ul { margin: 8px 0 8px 20px; }
+
+  /* Footer links like other pages + spacing */
+  .site-footer a { color: #1e90ff; text-decoration: none; }
+  .site-footer a:hover { text-decoration: underline; }
+  .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 40px;
+  }
+  .social-links { display: flex; gap: 16px; }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html">Travelly</a>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+    <ul id="primary-nav" class="nav-links" data-nav-links>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="active" href="policies.html">Policies</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="policies">
+  <h1>Policies</h1>
+  <div class="updated">Last updated: 2025-01-01</div>
+
+  <button class="btn toggle-all" id="toggleAll" type="button">Expand All</button>
+
+  <details class="policy" open>
+    <summary>
+      <span>Privacy Policy</span>
+      <span class="chev">▾</span>
+    </summary>
+    <div class="panel">
+      <p>We respect your privacy. This site collects minimal information (e.g., contact form inputs) purely to respond to your messages. We don’t sell your data and we don’t use it for profiling.</p>
+      <ul>
+        <li><strong>What we collect:</strong> name, email and message contents you submit.</li>
+        <li><strong>How we use it:</strong> to reply to your inquiry.</li>
+        <li><strong>How long we keep it:</strong> only as long as needed to provide support.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="policy">
+    <summary>
+      <span>Terms &amp; Conditions</span>
+      <span class="chev">▾</span>
+    </summary>
+    <div class="panel">
+      <p>By using this website, you agree to follow local laws and use the content for personal, non-commercial purposes unless permission is granted.</p>
+      <ul>
+        <li>Content is provided “as is” without warranties.</li>
+        <li>We’re not liable for third-party links or external content.</li>
+        <li>We may update these terms at any time.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="policy">
+    <summary>
+      <span>Cookie Policy</span>
+      <span class="chev">▾</span>
+    </summary>
+    <div class="panel">
+      <p>This site uses only essential cookies (if any) to ensure core features like navigation work smoothly. We avoid analytics unless you opt-in.</p>
+      <ul>
+        <li><strong>Essential cookies:</strong> required for basic functionality.</li>
+        <li><strong>Optional cookies:</strong> analytics/marketing (disabled by default).</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      © 2025 Travelly · Contact:
+      <a href="mailto:contact@travelly.com">contact@travelly.com</a> ·
+      <a href="tel:+923007654321">+92 300 7654321</a>
+    </div>
+
+<!-- Social icons (open in new tab) -->
+<div class="social-links" aria-label="Social links">
+  <a href="https://instagram.com/travelly_official" class="link" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+  <a href="https://www.facebook.com/facebookapp" target="_blank" rel="noopener" aria-label="Facebook">
+  <i class="fab fa-facebook"></i> Facebook
+</a>
+ <a href="https://www.youtube.com/@travellyofficial" class="link" target="_blank" rel="noopener" aria-label="YouTube">
+    <i class="fab fa-youtube"></i> YouTube
+  </a>
+
+</div>
+
+
+
+</footer>
+
+
+<!-- Scroll to Top -->
+<button class="to-top" type="button" aria-label="Back to top">↑</button>
+
+<script src="js/main.js" defer></script>
+<script>
+  // Inline fallback: Expand/Collapse All
+  (function () {
+    const toggleBtn = document.getElementById('toggleAll');
+    const policies = document.querySelectorAll('details.policy');
+    if (!toggleBtn || policies.length === 0) return;
+
+    let allOpen = Array.from(policies).every(p => p.open);
+    toggleBtn.textContent = allOpen ? 'Collapse All' : 'Expand All';
+
+    toggleBtn.addEventListener('click', () => {
+      allOpen = !allOpen;
+      policies.forEach(p => p.open = allOpen);
+      toggleBtn.textContent = allOpen ? 'Collapse All' : 'Expand All';
+    });
+
+    policies.forEach(p => p.addEventListener('toggle', () => {
+      const everyOpen = Array.from(policies).every(x => x.open);
+      toggleBtn.textContent = everyOpen ? 'Collapse All' : 'Expand All';
+    }));
+  })();
+</script>
+</body>
+</html>
